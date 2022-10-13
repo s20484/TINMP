@@ -18,23 +18,28 @@
         <ul>
             <li><a href="../../index.html">Homepage</a></li>
             <li><a href="../climber/climber.html">Climbers</a></li>
-            <li><a href="../climb/list.html">Climbs</a></li>
+            <li><a href="climb.html">Climbs</a></li>
             <li><a href="../location/location.html">Locations</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>New climber</h2>
-        
+        <h2>New climbs</h2>
         <form>
             <label for="name">Name: *</label>
             <input type="text" name="name" id="name">
            
-            <label for="email">Email: *</label>
-            <input type="text" name="email" id="email">
+            <label for="location">Location: *</label>
+            <input type="text" name="location" id="location">
 
-            <label for="dob">DoB:</label>
-            <input type="date" name="dob" id="dob">
+            <label for="type">Type: *</label>
+            <input type="text" name="type" id="type">
+
+            <label for="Grade">Grade: *</label>
+            <input type="text" name="grade" id="grade">
+
+            <label for="stillexists">Still exists: *</label>
+            <input type="text" name="stillexists" id="stillexists">
 
             <div>
                 <p id="errorSummary"></p>
@@ -42,9 +47,6 @@
                 <a href="">Cancel</a>    
             </div>
         </form>
-
-        
-    
     </main>
 
     <footer>

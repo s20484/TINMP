@@ -24,10 +24,28 @@
     </nav>
 
     <main>
-        <h2>Climbers</h2>
+        <h2>New climber</h2>
         
-        <p>No records found</p>
-        <p><a href="">Add new climber</a></p>
+        <form>
+            <label for="name">Name: *</label>
+            <input type="text" name="name" id="name">
+            <span id="errorName">Field is required</span>
+
+            <label for="email">Email: *</label>
+            <input type="text" name="email" id="email">
+            <span id="errorEmail">Field is required</span>
+
+            <label for="dob">DoB:</label>
+            <input type="date" name="dob" id="dob">
+            <span id="errorDob"></span>
+
+            <div>
+                <p id="errorSummary">Incorrect form input</p>
+                <input type="submit" value="Add">
+                <a href="">Cancel</a>
+            </div>
+        </form>
+        
     
     </main>
 
