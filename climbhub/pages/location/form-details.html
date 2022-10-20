@@ -24,23 +24,48 @@
     </nav>
 
     <main>
-        <h2>New location</h2>
+        <h2>Location</h2>
         
         <form>
             <label for="name">Name: *</label>
-            <input type="text" name="name" id="name">
-            <span id="errorName">Field is required</span>
+            <input type="text" name="name" id="name" value="Something" disabled>
            
             <label for="minimalgrade">Minimal grade: *</label>
-            <input type="text" name="minimalgrade" id="minimalgrade">
-            <span id="errorName">Field is required</span>
+            <input type="text" name="minimalgrade" id="minimalgrade" value="8b" disabled>
 
             <div>
-                <p id="errorSummary">Incorrect form input</p>
-                <input type="submit" value="Add" />
-                <a href="list.html">Cancel</a>    
+                <a href="form-edit.html">Edit</a>    
             </div>
         </form>
+
+        <h2>Climbs in this location</h2>
+
+        <table>
+    
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Grade</th>
+                    <th>Still exists</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Bibliography</td>
+                    <td>Czech Republic</td>
+                    <td>Lead</td>
+                    <td>9b</td>
+                    <td>True</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div>
+            <a href="list.html">Return</a>
+        </div>
 
     </main>
 

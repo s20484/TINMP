@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClimbHub Demo</title>
+    <title>ClimbHub Demo - Location</title>
     <link rel="stylesheet" href="../../main.css">
 </head>
 <body>
@@ -17,26 +17,26 @@
     <nav>
         <ul>
             <li><a href="../../index.html">Homepage</a></li>
-            <li><a href="../climber/climber.html">Climbers</a></li>
+            <li><a href="../climber/list.html">Climbers</a></li>
             <li><a href="../climb/list.html">Climbs</a></li>
-            <li><a href="../location/location.html">Locations</a></li>
+            <li><a href="../location/list.html">Locations</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>New location</h2>
+        <h2>Edit location</h2>
         
         <form>
             <label for="name">Name: *</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value="Czech Republic" required>
            
             <label for="minimalgrade">Minimal grade: *</label>
-            <input type="text" name="minimalgrade" id="minimalgrade">
+            <input type="text" name="minimalgrade" id="minimalgrade" value="8b" required>
 
             <div>
                 <p id="errorSummary"></p>
                 <input type="submit" value="Add" />
-                <a href="">Cancel</a>    
+                <a href="list.html">Cancel</a>    
             </div>
         </form>
 

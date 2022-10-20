@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClimbHub Demo</title>
+    <title>ClimbHub Demo - Climber</title>
     <link rel="stylesheet" href="../../main.css">
 </head>
 <body>
@@ -17,29 +17,29 @@
     <nav>
         <ul>
             <li><a href="../../index.html">Homepage</a></li>
-            <li><a href="../climber/climber.html">Climbers</a></li>
+            <li><a href="../climber/list.html">Climbers</a></li>
             <li><a href="../climb/list.html">Climbs</a></li>
-            <li><a href="../location/location.html">Locations</a></li>
+            <li><a href="../location/list.html">Locations</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>New climber</h2>
+        <h2>Edit climber</h2>
         
         <form>
             <label for="name">Name: *</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value="Jan223" required />
            
             <label for="email">Email: *</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" value="jan@gmail.com" required />
 
             <label for="dob">DoB:</label>
-            <input type="date" name="dob" id="dob">
+            <input type="date" name="dob" id="dob" value="2000/04/27"/>
 
             <div>
                 <p id="errorSummary"></p>
                 <input type="submit" value="Add" />
-                <a href="">Cancel</a>    
+                <a href="list.html">Cancel</a>    
             </div>
         </form>
 

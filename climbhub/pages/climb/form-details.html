@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClimbHub Demo - Climber</title>
+    <title>ClimbHub Demo - Climb</title>
     <link rel="stylesheet" href="../../main.css">
 </head>
 <body>
@@ -24,8 +24,30 @@
     </nav>
 
     <main>
-        <h2>Climbers</h2>
-        
+        <h2>Climb</h2>
+        <form>
+            <label for="name">Name: *</label>
+            <input type="text" name="name" id="name" value="Bibliography" disabled />
+           
+            <label for="location">Location: *</label>
+            <input type="text" name="location" id="location" value="Germany" disabled />
+
+            <label for="type">Type: *</label>
+            <input type="text" name="type" id="type" value="Sport" disabled />
+
+            <label for="Grade">Grade: *</label>
+            <input type="text" name="grade" id="grade" value="9b" disabled />
+
+            <label for="stillexists">Still exists: *</label>
+            <input type="text" name="stillexists" id="stillexists" value="True" disabled />
+
+            <div>
+                <a href="form-edit.html">Edit</a>    
+            </div>
+        </form>
+
+        <h2>Who climbed it</h2>
+
         <table>
 
             <thead>
@@ -33,7 +55,7 @@
                     <th>Name</th>
                     <th>E-mail</th>
                     <th>DoB</th>
-                    <th>Climbs</th>
+                    <th>Date of ascent</th>
                 </tr>
             </thead>
 
@@ -42,45 +64,23 @@
                     <td>Jan223</td>
                     <td>jan@gmail.com</td>
                     <td>2000/04/27</td>
-                    <td>
-                        <ul>
-                            <li>
-                                <a href="form-details.html">Details</a>
-                            </li>
-                            <li>
-                                <a href="form-edit.html">Edit</a>
-                            </li>
-                            <li>
-                                <a href="">Delete</a>
-                            </li>
-                        </ul>
-                    </td>
+                    <td>2020/03/30</td>
+                    
                 </tr>
 
                 <tr>
                     <td>Mac98</td>
                     <td>macduck@gmail.com</td>
                     <td>1998/03/21</td>
-                    <td>
-                        <ul>
-                            <li>
-                                <a href="form-details.html">Details</a>
-                            </li>
-                            <li>
-                                <a href="form-edit.html">Edit</a>
-                            </li>
-                            <li>
-                                <a href="">Delete</a>
-                            </li>
-                        </ul>
-                    </td>
+                    <td>2021/04/25</td>
                 </tr>
             </tbody>
 
         </table>
 
-        <p><a href="form.html">Add new climber</a></p>
-    
+        <div>
+            <a href="list.html">Return</a>
+        </div>
     </main>
 
     <footer>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClimbHub Demo</title>
+    <title>ClimbHub Demo - Climb</title>
     <link rel="stylesheet" href="../../main.css">
 </head>
 <body>
@@ -17,34 +17,34 @@
     <nav>
         <ul>
             <li><a href="../../index.html">Homepage</a></li>
-            <li><a href="../climber/climber.html">Climbers</a></li>
-            <li><a href="climb.html">Climbs</a></li>
-            <li><a href="../location/location.html">Locations</a></li>
+            <li><a href="../climber/list.html">Climbers</a></li>
+            <li><a href="../climb/list.html">Climbs</a></li>
+            <li><a href="../location/list.html">Locations</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>New climbs</h2>
+        <h2>Edit climb</h2>
         <form>
             <label for="name">Name: *</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value="Bibliography" required />
            
             <label for="location">Location: *</label>
-            <input type="text" name="location" id="location">
+            <input type="text" name="location" id="location" value="Czech Republic" required />
 
             <label for="type">Type: *</label>
-            <input type="text" name="type" id="type">
+            <input type="text" name="type" id="type" value="Sport" required />
 
             <label for="Grade">Grade: *</label>
-            <input type="text" name="grade" id="grade">
+            <input type="text" name="grade" id="grade" value="9b" required />
 
             <label for="stillexists">Still exists: *</label>
-            <input type="text" name="stillexists" id="stillexists">
+            <input type="text" name="stillexists" id="stillexists" value="True" required />
 
             <div>
                 <p id="errorSummary"></p>
                 <input type="submit" value="Add" />
-                <a href="">Cancel</a>    
+                <a href="list.html">Cancel</a>    
             </div>
         </form>
     </main>
