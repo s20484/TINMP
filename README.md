@@ -2,9 +2,9 @@
 Mini project developed during the TIN classes
 
 TODO:
+- CSS
 
-- Add climbers_climb nav
-- Climber details should be name, date of ascent, comment
-- Climb details should be name, date of ascent, comment
+TEST:
+- climb_climbers nav
+- climb-climbers details
 
-Otherwise, all's well!
