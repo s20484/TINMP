@@ -1,0 +1,77 @@
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+html {
+    background-color: #1A1A2E;
+    font-family: sans-serif;
+}
+
+body {
+    min-width: 60px;
+    color: whitesmoke;
+}
+
+main {
+    background-color: #16213E;
+}
+
+footer {
+    background-color: #0F3460;
+}
+
+header {
+    background-color: #0F3460;
+}
+
+nav {
+    background-color: #ff6200;
+}
+
+header,
+main,
+footer,
+nav {
+    margin: 1rem;
+}
+
+header,
+footer {
+    color: white;
+    padding: 1rem;
+}
+
+header {
+    overflow: auto;
+}
+
+header h1 {
+    float: left;
+    color: whitesmoke;
+}
+
+header img {
+    float: right;
+}
+
+nav ul {
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+nav ul li {
+    float:left;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #e44e4e;
+}
