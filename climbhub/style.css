@@ -1,32 +1,38 @@
 .logo {
     height: 100px;
     width: 100px;
+    float: right;
 }
 
 html {
-    background-color: #1A1A2E;
+    background-color: #252f37;
     font-family: sans-serif;
-}
-
-body {
-    min-width: 60px;
     color: whitesmoke;
 }
 
-main {
-    background-color: #16213E;
+body {
+    min-width: 600px;
+    color: whitesmoke;
 }
 
-footer {
-    background-color: #0F3460;
+header, main, footer, nav {
+    background-color: #252f37;
 }
 
 header {
-    background-color: #0F3460;
+    background-color: #007acc;
+}
+
+footer {
+    border-color: #5a5a5a;
+    border-width: 2px;
+    border-style: solid;
+    color: #5a5a5a;
+    text-align: center;
 }
 
 nav {
-    background-color: #ff6200;
+    background-color: #5a5a5a;
 }
 
 header,
@@ -38,7 +44,6 @@ nav {
 
 header,
 footer {
-    color: white;
     padding: 1rem;
 }
 
@@ -47,8 +52,9 @@ header {
 }
 
 header h1 {
+    font-size: 40px;
     float: left;
-    color: whitesmoke;
+    color: white;
 }
 
 header img {
@@ -56,6 +62,7 @@ header img {
 }
 
 nav ul {
+    
     padding: 0;
     overflow: hidden;
     list-style-type: none;
@@ -68,10 +75,45 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 1rem 2rem;
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #717171;
+    color: #dadada;
+    /* #c79292 */
+
 }
 
 nav ul li a.active {
-    background-color: #e44e4e;
+    background-color: #4d4d4d;
+    color: #00bfff;
 }
+
+main {
+    padding: 1.5rem;
+}
+
+main h2 {
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.table-list {
+    border-collapse: collapse;
+    width: 100%;
+    /* TODO: ADD COLOR! */
+}
+
+.table-list,
+.table-list th,
+.table-list td {
+    border: 1px solid;
+    /* TODO: ADD COLOR! */
+}
+
+
+
