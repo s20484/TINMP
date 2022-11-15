@@ -32,7 +32,7 @@ footer {
 }
 
 nav {
-    background-color: #5a5a5a;
+    background-color: #3b3b3b;
 }
 
 header,
@@ -98,21 +98,43 @@ main {
 }
 
 main h2 {
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid #007acc;
     margin-bottom: 2rem;
 }
 
 .table-list {
     border-collapse: collapse;
     width: 100%;
+    background-color: #3b3b3b;
     /* TODO: ADD COLOR! */
 }
 
 .table-list,
 .table-list th,
 .table-list td {
-    border: 1px solid;
+    border: 2px solid;
+    border-color: #007acc;
     /* TODO: ADD COLOR! */
+}
+
+.table-list th,
+.table-list td {
+    padding: 0.5rem;
+}
+
+.table-list th {
+    background-color: #007acc;
+}
+
+.list-actions {
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.list-actions li {
+    display: inline-block;
 }
 
 
