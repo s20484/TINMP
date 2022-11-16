@@ -30,12 +30,15 @@
         <form class="form">
             <label for="name">Name: <span class="symbol-required">*</span></label>
             <input type="text" name="name" id="name" value="Jan223" required>
+            <span id="errorName" class="errors-text"></span>
            
             <label for="email">Email: <span class="symbol-required">*</span></label>
             <input type="text" name="email" id="email" value="jan@gmail.com" required>
+            <span id="errorEmail" class="errors-text"></span>
 
             <label for="dob">DoB:</label>
             <input type="date" name="dob" id="dob" value="2000-04-27">
+            <span id="errorDob" class="errors-text"></span>
 
             <div class="form-buttons">
                 <p id="errorSummary"></p>

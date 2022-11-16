@@ -29,18 +29,23 @@
         <form class="form">
             <label for="name">Name: <span class="symbol-required">*</span></label>
             <input type="text" name="name" id="name" value="Bibliography" required>
+            <span id="errorName" class="errors-text"></span>
            
             <label for="location">Location: <span class="symbol-required">*</span></label>
             <input type="text" name="location" id="location" value="Czech Republic" required>
+            <span id="errorLocation" class="errors-text"></span>
 
             <label for="type">Type: <span class="symbol-required">*</span></label>
             <input type="text" name="type" id="type" value="Sport" required>
+            <span id="errorType" class="errors-text"></span>
 
             <label for="grade">Grade: <span class="symbol-required">*</span></label>
             <input type="text" name="grade" id="grade" value="9b" required>
+            <span id="errorGrade" class="errors-text"></span>
 
             <label for="stillexists">Still exists: <span class="symbol-required">*</span></label>
             <input type="text" name="stillexists" id="stillexists" value="True" required>
+            <span id="errorStillexists" class="errors-text"></span>
 
             <div class="form-buttons">
                 <p id="errorSummary"></p>

@@ -30,9 +30,11 @@
         <form class="form">
             <label for="name">Name: <span class="symbol-required">*</span></label>
             <input type="text" name="name" id="name" value="Czech Republic" required>
+            <span id="errorName" class="errors-text"></span>
            
             <label for="minimalgrade">Minimal grade: <span class="symbol-required">*</span></label>
             <input type="text" name="minimalgrade" id="minimalgrade" value="8b" required>
+            <span id="errorMinimalGrade" class="errors-text"></span>
 
             <div class="form-buttons">
                 <p id="errorSummary"></p>

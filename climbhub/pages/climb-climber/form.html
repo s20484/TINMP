@@ -30,15 +30,19 @@
         <form class="form">
             <label for="name">Climb name: <span class="symbol-required">*</span></label>
             <input type="text" name="name" id="name">
+            <span id="errorClimbName" class="errors-text"></span>
            
             <label for="email">Climber name: <span class="symbol-required">*</span></label>
             <input type="text" name="email" id="email">
+            <span id="errorClimberName" class="errors-text"></span>
 
             <label for="doa">Date of ascent: <span class="symbol-required">*</span></label>
             <input type="date" name="doa" id="doa">
+            <span id="errorDoa" class="errors-text"></span>
 
             <label for="comment">Comment: </label>
             <input type="text" name="comment" id="comment">
+            <span id="errorComment" class="errors-text"></span>
 
             <div class="form-buttons">
                 <p id="errorSummary"></p>

@@ -1,9 +1,3 @@
-.logo {
-    height: 100px;
-    width: 100px;
-    float: right;
-}
-
 html {
     background-color: #252f37;
     font-family: sans-serif;
@@ -11,7 +5,7 @@ html {
 }
 
 body {
-    min-width: 600px;
+    min-width: 360px;
     color: whitesmoke;
 }
 
@@ -47,28 +41,25 @@ header, footer {
 }
 
 header {
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1 {
     font-size: 40px;
-    float: left;
     color: white;
 }
 
 header img {
-    float: right;
+    height: 100px;
+    width: 100px;
 }
 
 nav ul {
-    
+    display: flex;
     padding: 0;
     overflow: hidden;
     list-style-type: none;
-}
-
-nav ul li {
-    float: left;
 }
 
 nav ul li a {
@@ -231,7 +222,9 @@ textarea {
 
 .form {
     margin-left: 2rem;
-    width: 300px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 150px 300px 1fr;
 }
 
 .form select,
@@ -264,6 +257,7 @@ textarea {
 
 .form-buttons {
     margin-top: 2rem;
+    grid-column: 1 / span 2;
 }
 
 .form-button-submit,
@@ -296,5 +290,90 @@ textarea {
     margin-top: 0.5em;
 }
 
+@media (max-width: 720px) {
 
+    header {
+        flex-direction: column;
+    }
 
+    header h1 {
+        text-align: center;
+    }
+
+    header img {
+        align-self: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        row-gap: unset;
+        margin-left: unset;
+    }
+
+    .form-buttons {
+        grid-column: 1 / 1;
+    }
+
+    .list-actions-button-details,
+    .list-actions-button-edit,
+    .list-actions-button-delete {
+        display:table-cell;
+        width: 60px;
+        padding: 0 rem 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    body,
+    nav,
+    nav ul,
+    header,
+    main,
+    footer {
+        margin: 0;
+    }
+
+    main {
+        margin-bottom: 50px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .table-list th,
+    .table-list td {
+        padding: 2px;
+        flex-wrap: wrap;
+    }
+
+    .list-actions-button-details,
+    .list-actions-button-edit,
+    .list-actions-button-delete {
+        width: 60px;
+        padding: 0 rem 0.5rem;
+    }
+}
