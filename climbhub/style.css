@@ -69,7 +69,7 @@ nav ul {
 }
 
 nav ul li {
-    float:left;
+    float: left;
 }
 
 nav ul li a {
@@ -119,6 +119,7 @@ main h2 {
 
 .table-list th,
 .table-list td {
+    text-align: center;
     padding: 0.5rem;
 }
 
@@ -136,6 +137,56 @@ main h2 {
 .list-actions li {
     display: inline-block;
 }
+
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete {
+    display: inline-block;
+    width: 75px;
+    padding: 0.25 rem 0.5rem;
+}
+
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete,
+.button-add {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.list-actions-button-details,
+.list-actions-button-edit {
+    margin-right: 1rem;
+}
+
+.list-actions-button-details {
+    background-color: #34ac25;
+}
+
+.list-actions-button-details:hover {
+    background-color: #59b24d;
+}
+
+.list-actions-button-edit {
+    background-color: #e0a537;
+}
+
+.list-actions-button-edit:hover {
+    background-color: #e9c45e;
+}
+
+.list-actions-button-delete {
+    background-color: #d55757;
+}
+
+.list-actions-button-delete:hover {
+    background-color: #bc6666;
+}
+
 
 
 
