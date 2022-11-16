@@ -42,8 +42,7 @@ nav {
     margin: 1rem;
 }
 
-header,
-footer {
+header, footer {
     padding: 1rem;
 }
 
@@ -95,10 +94,12 @@ nav ul li a.active {
 
 main {
     padding: 1.5rem;
+    margin-bottom: 50px;
 }
 
 main h2 {
-    border-bottom: 1px solid #007acc;
+    padding: 5px;
+    border-bottom: 2px solid #007acc;
     margin-bottom: 2rem;
 }
 
@@ -186,6 +187,61 @@ main h2 {
 .list-actions-button-delete:hover {
     background-color: #bc6666;
 }
+
+.button-add {
+    background-color: #007acc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    float: left;
+}
+
+.button-add:hover {
+    background-color: #1e87cc;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.form {
+    margin-left: 2rem;
+    width: 300px;
+}
+
+.form select,
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="email"] {
+    border: 2px solid #4d4d4d;
+    color: whitesmoke;
+    background-color: #3b3b3b;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.symbol-required {
+    color: #ff5151;
+}
+
 
 
 
