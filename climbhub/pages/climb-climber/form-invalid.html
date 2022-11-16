@@ -30,24 +30,24 @@
         <form class="form">
             <label for="name">Climb name: <span class="symbol-required">*</span></label>
             <input type="text" name="name" id="name">
-            <span id="errorClimbName">Field is required</span>
+            <span id="errorClimbName" class="errors-text">Field is required</span>
            
             <label for="email">Climber name: <span class="symbol-required">*</span></label>
             <input type="text" name="email" id="email">
-            <span id="errorClimberName">Field is required</span>
+            <span id="errorClimberName" class="errors-text">Field is required</span>
 
             <label for="doa">Date of ascent: <span class="symbol-required">*</span></label>
             <input type="date" name="doa" id="doa">
-            <span id="errorDoa">Field is required</span>
+            <span id="errorDoa" class="errors-text">Field is required</span>
 
             <label for="comment">Comment: </label>
             <input type="text" name="comment" id="comment">
-            <span id="errorComment"></span>
+            <span id="errorComment" class="errors-text"></span>
 
-            <div>
-                <p id="errorSummary">Incorrect form input</p>
-                <input type="submit" value="Add">
-                <a href="list.html">Cancel</a>    
+            <div class="form-buttons">
+                <p id="errorSummary" class="errors-text">Incorrect form input</p>
+                <input type="submit" value="Accept" class="form-button-submit">
+                <a href="list.html" class="form-button-cancel">Cancel</a>    
             </div>
         </form>
         
