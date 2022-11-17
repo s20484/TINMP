@@ -15,7 +15,6 @@ header, main, footer, nav {
 
 header {
     background: linear-gradient(to right bottom, #2695d5, #6240de);
-    /* background-color: #007acc; */
 }
 
 footer {
@@ -149,7 +148,7 @@ main h2 {
 .list-actions-button-delete {
     display: inline-block;
     width: 75px;
-    padding: 0.25 rem 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 
 .list-actions-button-details,
@@ -254,7 +253,8 @@ textarea {
     width: 100%;
 }
 
-.form input[disabled] {
+.form input[disabled],
+.form select[disabled] {
     color: #717171;
 }
 
@@ -345,7 +345,7 @@ textarea {
     .list-actions-button-edit,
     .list-actions-button-delete {
         width: 60px;
-        padding: 0 rem 0.5rem;
+        padding: 0rem 0.5rem;
     }
 
     .list-actions li {

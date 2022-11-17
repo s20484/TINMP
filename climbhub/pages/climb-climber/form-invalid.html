@@ -28,17 +28,19 @@
         <h2>New climb-climber</h2>
 
         <form class="form">
-            <label for="name">Climb name: <span class="symbol-required">*</span></label>
-            <input type="text" name="name" id="name">
+            <label for="climbName">Climb name: <span class="symbol-required">*</span></label>
+            <select name="climbName" id="climbName" class="error-input">
+                <option value="Bibliography">Bibliography</option>
+                <option value="Silence">Silence</option>
+            </select>
             <span id="errorClimbName" class="errors-text">Field is required</span>
            
-            <label for="email">Climber name: <span class="symbol-required">*</span></label>
-            <input type="text" name="email" id="email">
+            <label for="climberName">Climber name: <span class="symbol-required">*</span></label>
+            <select name="climberName" id="climberName" class="error-input">
+                <option value="magnusMidtbo">Magnus Midtbo</option>
+                <option value="adamOndra">Adam Ondra</option>
+            </select>
             <span id="errorClimberName" class="errors-text">Field is required</span>
-
-            <label for="doa">Date of ascent: <span class="symbol-required">*</span></label>
-            <input type="date" name="doa" id="doa">
-            <span id="errorDoa" class="errors-text">Field is required</span>
 
             <label for="comment">Comment: </label>
             <input type="text" name="comment" id="comment">
