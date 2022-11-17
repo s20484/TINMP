@@ -258,6 +258,13 @@ textarea {
     color: #717171;
 }
 
+.form input[type="checkbox"] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
 .form label {
     display: block;
     margin-top: 1rem;
@@ -295,6 +302,10 @@ textarea {
 .form input.error-input,
 .form select.error-input {
     border: 3px solid #d55757
+}
+
+.form input.error-checkbox {
+    outline: 2px solid #d55757;
 }
 
 .errors-text {
