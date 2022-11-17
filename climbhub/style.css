@@ -37,6 +37,18 @@ nav {
     margin: 1rem;
 }
 
+header {
+    margin-bottom: 0;
+}
+
+nav {
+    margin-top: 0;
+}
+
+nav ul {
+    margin-top: 0;
+}
+
 header, footer {
     padding: 1rem;
 }
@@ -99,21 +111,22 @@ main h2 {
     border-collapse: collapse;
     width: 100%;
     background-color: #3b3b3b;
-    /* TODO: ADD COLOR! */
+    box-shadow: 0 0 20px rgba(79, 114, 197, 0.399);
 }
 
-.table-list,
-.table-list th,
-.table-list td {
-    border: 2px solid;
-    border-color: #007acc;
-    /* TODO: ADD COLOR! */
+.table-list tbody tr {
+    border-bottom: 2px solid #767676;
 }
+
+.table-list tbody tr:last-of-type {
+    border-bottom: 2px solid #007acc;
+}
+
 
 .table-list th,
 .table-list td {
     text-align: center;
-    padding: 0.5rem;
+    padding: 12px 15px;
 }
 
 .table-list th {
