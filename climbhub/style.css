@@ -14,7 +14,8 @@ header, main, footer, nav {
 }
 
 header {
-    background-color: #007acc;
+    background: linear-gradient(to right bottom, #2695d5, #6240de);
+    /* background-color: #007acc; */
 }
 
 footer {
@@ -90,7 +91,7 @@ main {
 
 main h2 {
     padding: 5px;
-    border-bottom: 2px solid #007acc;
+    border-bottom: 2px solid #761cec;
     margin-bottom: 2rem;
 }
 
@@ -330,9 +331,17 @@ textarea {
     .list-actions-button-details,
     .list-actions-button-edit,
     .list-actions-button-delete {
-        display:table-cell;
         width: 60px;
         padding: 0 rem 0.5rem;
+    }
+
+    .list-actions li {
+        display: block;
+    }
+
+    .list-actions-button-details,
+    .list-actions-button-edit {
+        margin-right: 0;
     }
 }
 
@@ -366,6 +375,7 @@ textarea {
 
     .table-list th,
     .table-list td {
+        text-align: center;
         padding: 2px;
         flex-wrap: wrap;
     }
@@ -373,9 +383,18 @@ textarea {
     .list-actions-button-details,
     .list-actions-button-edit,
     .list-actions-button-delete {
-        display:table-cell;
+        text-align: center;
         width: 60px;
-        padding: 0 rem 0.5rem;
+        padding: 0rem 0.5rem;
+    }
+
+    .list-actions li {
+        display: block;
+    }
+
+    .list-actions-button-details,
+    .list-actions-button-edit {
+        margin-right: 0;
     }
 
 }
