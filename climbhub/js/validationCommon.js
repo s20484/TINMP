@@ -52,3 +52,17 @@ function checkGrade(value) {
     return regex.test(value);
 }
 
+function checkDob(value) {
+    if (!value) {
+        return false;
+    }
+    
+    let currentDate = new Date();
+    let givenDate = new Date(value.value); //I hate this
+    
+    if (givenDate > currentDate) {
+        return false;
+    }
+    return true;
+}
+

@@ -7,6 +7,7 @@
     <title>ClimbHub Demo - Climber</title>
     <link rel="stylesheet" href="../../style.css">
     <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../js/validationClimberForm.js"></script>
 </head>
 <body>
     
@@ -28,7 +29,7 @@
     <main>
         <h2>New climber</h2>
         
-        <form class="form">
+        <form class="form" novalidate onsubmit="return validateForm();">
             <label for="name">Name: <span class="symbol-required">*</span></label>
             <input type="text" name="name" id="name">
             <span id="errorName" class="errors-text"></span>
@@ -42,7 +43,7 @@
             <span id="errorDob" class="errors-text"></span>
 
             <div class="form-buttons">
-                <p id="errorSummary"></p>
+                <p id="errorSummary" class="errors-text"></p>
                 <input type="submit" value="Accept" class="form-button-submit">
                 <a href="list.html" class="form-button-cancel">Cancel</a>    
             </div>

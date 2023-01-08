@@ -63,5 +63,4 @@ function validateForm() {
     }
 
     return valid;
-
 }
